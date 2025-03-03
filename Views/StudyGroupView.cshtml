@@ -1,0 +1,30 @@
+﻿@*Interface Enumerable = Enumarate or list *@
+@model IEnumerable<myStudyGroup.Models.MyStudyGroup>
+@{
+    ViewBag.Title = "StudyGroup";
+}
+
+<h2>StudyGroupView</h2>
+
+<table class= "table">
+    <thread>
+        <tr>
+            <th>@Html.DisplayNameFor(Model=>Model.StudentNumber)</th>
+            <th>@Html.DisplayNameFor(Model=>Model.FirstName)</th>
+            <th>@Html.DisplayNameFor(Model=>Model.LastName)</th>
+            <th>@Html.DisplayNameFor(Model=>Model.LastName)</th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var item in Model)
+            {
+                <tr>
+                    <th>@Html.DisplayNameFor(Model => Model.StudentNumber)</th>
+                    <th>@Html.DisplayNameFor(Model => Model.FirstName)</th>
+                    <th>@Html.DisplayNameFor(Model => Model.LastName)</th>
+                    <th>@Html.DisplayNameFor(Model => Model.LastName)</th>
+                </tr>
+            }
+    </tbody>
+</table>
+
